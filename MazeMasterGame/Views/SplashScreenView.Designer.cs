@@ -1,6 +1,6 @@
 ﻿namespace MazeMasterGame
 {
-    partial class Form1
+    partial class SplashScreenView
     {
         /// <summary>
         /// Required designer variable.
