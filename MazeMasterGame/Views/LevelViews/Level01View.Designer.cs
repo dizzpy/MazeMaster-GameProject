@@ -59,9 +59,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Exit = new System.Windows.Forms.Label();
             this.StartLabel = new System.Windows.Forms.Label();
-            this.End = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.End = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,6 +119,7 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(77, 45);
             this.panel29.TabIndex = 4;
+            this.panel29.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel28
             // 
@@ -127,6 +128,7 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(151, 51);
             this.panel28.TabIndex = 7;
+            this.panel28.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel27
             // 
@@ -135,6 +137,7 @@
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(52, 45);
             this.panel27.TabIndex = 6;
+            this.panel27.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel26
             // 
@@ -143,6 +146,7 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(103, 45);
             this.panel26.TabIndex = 5;
+            this.panel26.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel25
             // 
@@ -151,6 +155,7 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(45, 148);
             this.panel25.TabIndex = 5;
+            this.panel25.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel24
             // 
@@ -159,6 +164,7 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(45, 115);
             this.panel24.TabIndex = 4;
+            this.panel24.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel23
             // 
@@ -167,6 +173,7 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(213, 45);
             this.panel23.TabIndex = 5;
+            this.panel23.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel22
             // 
@@ -175,6 +182,7 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(45, 163);
             this.panel22.TabIndex = 4;
+            this.panel22.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel21
             // 
@@ -183,6 +191,7 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(45, 123);
             this.panel21.TabIndex = 5;
+            this.panel21.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel20
             // 
@@ -191,6 +200,7 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(239, 45);
             this.panel20.TabIndex = 4;
+            this.panel20.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel19
             // 
@@ -199,6 +209,7 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(45, 282);
             this.panel19.TabIndex = 4;
+            this.panel19.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel18
             // 
@@ -207,6 +218,7 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(205, 45);
             this.panel18.TabIndex = 3;
+            this.panel18.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel17
             // 
@@ -215,6 +227,7 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(195, 45);
             this.panel17.TabIndex = 4;
+            this.panel17.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel16
             // 
@@ -223,6 +236,7 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(331, 45);
             this.panel16.TabIndex = 4;
+            this.panel16.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel15
             // 
@@ -231,6 +245,7 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(45, 86);
             this.panel15.TabIndex = 4;
+            this.panel15.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel14
             // 
@@ -239,6 +254,7 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(45, 146);
             this.panel14.TabIndex = 3;
+            this.panel14.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel13
             // 
@@ -247,6 +263,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(230, 45);
             this.panel13.TabIndex = 3;
+            this.panel13.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel12
             // 
@@ -255,6 +272,7 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(45, 147);
             this.panel12.TabIndex = 3;
+            this.panel12.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel10
             // 
@@ -263,6 +281,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(138, 45);
             this.panel10.TabIndex = 2;
+            this.panel10.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel9
             // 
@@ -271,6 +290,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(45, 264);
             this.panel9.TabIndex = 3;
+            this.panel9.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel11
             // 
@@ -279,6 +299,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(45, 179);
             this.panel11.TabIndex = 2;
+            this.panel11.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel7
             // 
@@ -287,6 +308,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(148, 45);
             this.panel7.TabIndex = 1;
+            this.panel7.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel8
             // 
@@ -295,6 +317,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(514, 45);
             this.panel8.TabIndex = 2;
+            this.panel8.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel6
             // 
@@ -303,6 +326,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(45, 599);
             this.panel6.TabIndex = 2;
+            this.panel6.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel5
             // 
@@ -311,6 +335,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(45, 599);
             this.panel5.TabIndex = 1;
+            this.panel5.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel4
             // 
@@ -319,6 +344,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(752, 45);
             this.panel4.TabIndex = 0;
+            this.panel4.MouseEnter += new System.EventHandler(this.WallHit);
             // 
             // panel2
             // 
@@ -359,17 +385,6 @@
             this.StartLabel.Text = "Star Rewards : ";
             this.StartLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // End
-            // 
-            this.End.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.End.Location = new System.Drawing.Point(668, 519);
-            this.End.Name = "End";
-            this.End.Size = new System.Drawing.Size(35, 35);
-            this.End.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.End.TabIndex = 8;
-            this.End.TabStop = false;
-            this.End.MouseEnter += new System.EventHandler(this.EndPoint);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -396,6 +411,18 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "00";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // End
+            // 
+            this.End.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.End.Image = global::MazeMasterGame.Properties.Resources.end;
+            this.End.Location = new System.Drawing.Point(668, 519);
+            this.End.Name = "End";
+            this.End.Size = new System.Drawing.Size(35, 35);
+            this.End.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.End.TabIndex = 8;
+            this.End.TabStop = false;
+            this.End.MouseEnter += new System.EventHandler(this.EndPoint);
             // 
             // Level01View
             // 

@@ -10,8 +10,12 @@ using System.Windows.Forms;
 
 namespace MazeMasterGame.Views.LevelViews
 {
+    
     public partial class Level01View : Form
     {
+        private int numberOfAttempt = 0;
+        private int maxAttempts = 3;
+
         public Level01View()
         {
             InitializeComponent();
@@ -37,5 +41,29 @@ namespace MazeMasterGame.Views.LevelViews
             startPoint.Offset(175, 15);
             Cursor.Position = PointToScreen(startPoint);
         }
+
+        private void WallHit(object sender, EventArgs e)
+        {
+            numberOfAttempt++;
+            if (numberOfAttempt >= maxAttempts)
+            {
+                GameOver();
+            }
+            else
+            {
+                MessageBox.Show("You hit the wall and you have " + (maxAttempts - numberOfAttempt) + " attempts left! Try again!");
+                MouseMoveStart();
+            }
+        }
+
+        private void GameOver()
+        {
+            MessageBox.Show("Game Over !");
+            this.Close();
+            DashboardView dashboard = new DashboardView();
+            dashboard.Show();
+        }
+
+
     }
 }
