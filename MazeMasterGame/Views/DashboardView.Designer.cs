@@ -39,7 +39,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rebellion Squad", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(207)))), ((int)(((byte)(248)))));
-            this.label1.Location = new System.Drawing.Point(220, 23);
+            this.label1.Location = new System.Drawing.Point(220, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(336, 192);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             this.StartLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartLabel.Font = new System.Drawing.Font("Rebellion Squad", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(207)))), ((int)(((byte)(248)))));
-            this.StartLabel.Location = new System.Drawing.Point(279, 422);
+            this.StartLabel.Location = new System.Drawing.Point(279, 417);
             this.StartLabel.Name = "StartLabel";
             this.StartLabel.Size = new System.Drawing.Size(218, 41);
             this.StartLabel.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitButton.Font = new System.Drawing.Font("Rebellion Squad", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(82)))), ((int)(((byte)(74)))));
-            this.ExitButton.Location = new System.Drawing.Point(345, 479);
+            this.ExitButton.Location = new System.Drawing.Point(345, 474);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(86, 41);
             this.ExitButton.TabIndex = 2;
