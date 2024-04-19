@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MazeMasterGame.Views.LevelViews;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,23 @@ namespace MazeMasterGame.Views
         public DashboardView()
         {
             InitializeComponent();
+        }
+
+        private void DashboardView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Level01View level01View = new Level01View();
+            level01View.Show();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
