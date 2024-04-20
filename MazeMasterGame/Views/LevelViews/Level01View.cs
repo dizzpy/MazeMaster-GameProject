@@ -15,6 +15,8 @@ namespace MazeMasterGame.Views.LevelViews
     {
         private int numberOfAttempt = 0;
         private int maxAttempts = 3;
+        private int rewardsCount = 00;
+
 
         public Level01View()
         {
@@ -22,12 +24,32 @@ namespace MazeMasterGame.Views.LevelViews
             MouseMoveStart();
         }
 
+
+        private void Level01View_Load(object sender, EventArgs e)
+        {
+            RewardCount.Text = rewardsCount.ToString();
+            AttemptCount.Text = (maxAttempts - numberOfAttempt).ToString();
+        }
+
+
+
         private void EndPoint(object sender, EventArgs e)
         {
-            MessageBox.Show("Congratulations! You have completed the level!");
-            this.Close();
-            DashboardView dashboard = new DashboardView();
-            dashboard.Show();
+            if(rewardsCount == 100)
+            {
+                MessageBox.Show("Congratulations! You have completed the level!");
+                this.Close();
+                Level02View level02 = new Level02View();
+                level02.Show();
+            }
+            else
+            {
+                MessageBox.Show("You need to collect all the rewards to complete the level!");
+                MouseMoveStart();
+                numberOfAttempt = 0;
+                AttemptCount.Text= numberOfAttempt.ToString();
+
+            }
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -51,7 +73,8 @@ namespace MazeMasterGame.Views.LevelViews
             }
             else
             {
-                MessageBox.Show("You hit the wall and you have " + (maxAttempts - numberOfAttempt) + " attempts left! Try again!");
+                MessageBox.Show("You hit the wall! Try again!");
+                AttemptCount.Text = (maxAttempts - numberOfAttempt).ToString();
                 MouseMoveStart();
             }
         }
@@ -63,6 +86,19 @@ namespace MazeMasterGame.Views.LevelViews
             DashboardView dashboard = new DashboardView();
             dashboard.Show();
         }
+
+        private void StarsPanel_MouseEnter(object sender, EventArgs e)
+        {
+            Control star = (Control)sender;
+            if (star.Tag != null && star.Tag.ToString() == "star-rewards")
+            {
+                rewardsCount += 10;
+                RewardCount.Text = rewardsCount.ToString();
+
+                star.Visible = false; // Hide the star when the reward is collected
+            }
+        }
+
 
 
     }

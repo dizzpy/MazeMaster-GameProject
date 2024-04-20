@@ -68,6 +68,12 @@
     <Compile Include="Views\LevelViews\Level01View.Designer.cs">
       <DependentUpon>Level01View.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LevelViews\Level02View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LevelViews\Level02View.Designer.cs">
+      <DependentUpon>Level02View.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SplashScreenView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LevelViews\Level01View.resx">
       <DependentUpon>Level01View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LevelViews\Level02View.resx">
+      <DependentUpon>Level02View.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +115,7 @@
     <Content Include="Assests\end.png" />
     <Content Include="Assests\moon-rewards.jpg" />
     <Content Include="Assests\star-rewards.png" />
+    <Content Include="Assests\star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
