@@ -46,7 +46,7 @@ namespace MazeMasterGame.Views.LevelViews
             {
                 MessageBox.Show("You need to collect all the rewards to complete the level!");
                 MouseMoveStart();
-                numberOfAttempt = 0;
+                numberOfAttempt = 3;
                 AttemptCount.Text= numberOfAttempt.ToString();
 
             }
